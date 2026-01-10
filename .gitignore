@@ -3,6 +3,11 @@ node_modules/
 
 # Build output
 dist/
+*.zip
+
+# Vite
+.vite/
+vite.config.js.timestamp-*
 
 # Logs
 npm-debug.log*

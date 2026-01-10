@@ -26,23 +26,43 @@ npm run dev
 npm start
 ```
 
-Inicia un servidor de desarrollo con live-reload en `http://localhost:3000`. Los cambios se reflejarán automáticamente en el navegador.
+Inicia un servidor de desarrollo con **Vite** y hot-reload en `http://localhost:3000`. Los cambios se reflejarán automáticamente en el navegador.
 
-#### Producción
+#### Build/Empaquetado
 
 ```bash
 npm run build
 ```
 
-Minifica los archivos CSS y JavaScript para producción en la carpeta `dist/`.
+Construye y optimiza el proyecto para producción en la carpeta `dist/`:
+- ✅ Minificación de HTML, CSS y JavaScript
+- ✅ Optimización de assets (imágenes, fuentes)
+- ✅ Tree-shaking (eliminación de código no usado)
+- ✅ Code splitting automático
+- ✅ Hashing de archivos para caché
 
-#### Servidor HTTP simple
+#### Empaquetar todo
 
 ```bash
-npm run serve
+npm run package
 ```
 
-Inicia un servidor HTTP estático en `http://localhost:8080`.
+Construye el proyecto y crea un archivo ZIP `deeb-dot-cl.zip` listo para desplegar.
+
+#### Vista previa de producción
+
+```bash
+npm run preview
+```
+
+Previsualiza el build de producción localmente en `http://localhost:8080`.
+
+#### Scripts legacy (sin Vite)
+
+```bash
+npm run legacy:dev      # Live server simple
+npm run legacy:serve    # HTTP server básico
+```
 
 ## 📁 Estructura del proyecto
 
@@ -62,12 +82,12 @@ deeb_dot_cl/
 
 ## 🛠️ Tecnologías
 
-- HTML5
-- CSS3 (con variables CSS y tema dark/light)
-- JavaScript Vanilla
-- Live Server para desarrollo
-- Clean-CSS para minificación de CSS
-- Terser para minificación de JavaScript
+- **HTML5**
+- **CSS3** (con variables CSS y tema dark/light)
+- **JavaScript Vanilla** (ES6+)
+- **Vite** - Build tool y dev server ultra-rápido
+- **Terser** - Minificación avanzada de JavaScript
+- **PostCSS** - Procesamiento automático de CSS
 
 ## 📝 Características
 
