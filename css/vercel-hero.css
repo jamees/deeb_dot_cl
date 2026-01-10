@@ -1,0 +1,304 @@
+/* ============================================
+   VERCEL-INSPIRED HERO SECTION
+   ============================================ */
+
+/* Hero Section - Vercel Style */
+.hero-section {
+    position: relative;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem;
+    overflow: hidden;
+    background: var(--bg-primary);
+}
+
+/* Grid Background Pattern */
+.hero-grid-bg {
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(to right, var(--card-border) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--card-border) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+/* Gradient Overlay */
+.hero-gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+[data-theme="dark"] .hero-gradient-overlay {
+    background: radial-gradient(circle at 50% 0%, rgba(96, 165, 250, 0.15) 0%, transparent 50%);
+}
+
+/* Hero Container */
+.hero-container {
+    position: relative;
+    z-index: 3;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    overflow: visible;
+}
+
+/* Hero Logo - Large deeb branding */
+.hero-logo {
+    font-size: 7rem;
+    font-weight: 800;
+    letter-spacing: 0;
+    margin-bottom: 1.5rem;
+    animation: fadeInDown 0.8s ease-out;
+    display: inline-block;
+    padding: 0 1rem;
+    width: auto;
+    white-space: nowrap;
+    overflow: visible;
+}
+
+.logo-underscore {
+    color: #9ca3af;
+}
+
+[data-theme="dark"] .logo-underscore {
+    color: #6b7280;
+}
+
+.logo-deeb {
+    background: linear-gradient(135deg, #111827 0%, #3b82f6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    padding-right: 0.1em;
+}
+
+[data-theme="dark"] .logo-deeb {
+    background: linear-gradient(135deg, #f1f5f9 0%, #93c5fd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    padding-right: 0.1em;
+}
+
+/* Hero Title */
+.hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin: 0;
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+/* Light mode - Dark text */
+[data-theme="light"] .hero-title {
+    color: #111827;
+}
+
+/* Dark mode - Light text with shadow */
+[data-theme="dark"] .hero-title {
+    color: #f1f5f9;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero Subtitle */
+.hero-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    max-width: 700px;
+    font-weight: 400;
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+/* Light mode - Gray text */
+[data-theme="light"] .hero-subtitle {
+    color: #4b5563;
+}
+
+/* Dark mode - Light gray text with shadow */
+[data-theme="dark"] .hero-subtitle {
+    color: #cbd5e1;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Badges */
+.hero-badges {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+
+.badge {
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: 1px solid var(--card-border);
+    transition: all 0.3s ease;
+}
+
+.badge:hover {
+    background: var(--bg-tertiary);
+    border-color: var(--blue-accent);
+    transform: translateY(-2px);
+}
+
+/* Hero CTAs */
+.hero-cta {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    animation: fadeInUp 0.8s ease-out 0.8s both;
+}
+
+.cta-btn-primary {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid var(--text-primary);
+}
+
+.cta-btn-primary:hover {
+    background: var(--text-secondary);
+    border-color: var(--text-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cta-btn-secondary-outline {
+    background: transparent;
+    color: var(--text-secondary);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid var(--card-border);
+    transition: all 0.3s ease;
+}
+
+.cta-btn-secondary-outline:hover {
+    background: var(--bg-secondary);
+    border-color: var(--text-secondary);
+    color: var(--text-primary);
+    transform: translateY(-2px);
+}
+
+/* Dark Mode Adjustments */
+[data-theme="dark"] .cta-btn-primary {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    border-color: var(--card-border);
+}
+
+[data-theme="dark"] .cta-btn-primary:hover {
+    background: var(--bg-secondary);
+    border-color: var(--blue-accent);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 70vh;
+        padding: 4rem 1.5rem;
+    }
+
+    .hero-logo {
+        font-size: 4.5rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cta-btn-primary,
+    .cta-btn-secondary-outline {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-badges {
+        gap: 0.5rem;
+    }
+
+    .badge {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-logo {
+        font-size: 3rem;
+        padding: 0 0.3rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+}
+
+/* Remove old hero styles conflicts */
+.hero-section .hero-text,
+.hero-section .hero-overlay,
+.hero-section .hero-illustration,
+.hero-section .hero-description {
+    display: none;
+}

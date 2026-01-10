@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Blog deeb - Innovación, Desarrollo y Transformación Digital</title>
+    <meta name="title" content="Blog deeb - Innovación, Desarrollo y Transformación Digital">
+    <meta name="description" content="Descubre insights sobre desarrollo de software, arquitectura empresarial, modernización tecnológica y transformación digital. Artículos escritos por expertos de deeb STUDIO y deeb Advisory.">
+    <meta name="keywords" content="desarrollo software, transformación digital, arquitectura empresarial, SaaS, cloud computing, deeb, tecnología">
+    <meta name="author" content="deeb">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deeb.com/blog.html">
+    <meta property="og:title" content="Blog deeb - Innovación, Desarrollo y Transformación Digital">
+    <meta property="og:description" content="Descubre insights sobre desarrollo de software, arquitectura empresarial, modernización tecnológica y transformación digital.">
+    <meta property="og:image" content="https://deeb.com/images/blog-og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://deeb.com/blog.html">
+    <meta property="twitter:title" content="Blog deeb - Innovación, Desarrollo y Transformación Digital">
+    <meta property="twitter:description" content="Descubre insights sobre desarrollo de software, arquitectura empresarial, modernización tecnológica y transformación digital.">
+    <meta property="twitter:image" content="https://deeb.com/images/blog-og-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://deeb.com/blog.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/image_logo_white.png">
+    
+    <link rel="stylesheet" href="css/modern-style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html#inicio" class="logo">
+                <img src="images/image_logo_white.png" alt="deeb" class="logo-img">
+                <span class="logo-text">deeb</span>
+            </a>
+            
+            <nav class="nav">
+                <!-- Servicios Mega Menu -->
+                <div class="nav-item-mega">
+                    <a href="index.html#servicios" class="nav-link">Servicios <span>▾</span></a>
+                    
+                    <div class="mega-menu">
+                        <div class="mega-menu-container">
+                            <div class="mega-menu-section">
+                                <h4>deeb STUDIO</h4>
+                                <p class="mega-menu-desc">Desarrollo y construcción de productos digitales</p>
+                                <ul>
+                                    <li><a href="index.html#servicios">Aplicaciones Web</a></li>
+                                    <li><a href="index.html#servicios">Aplicaciones Móviles</a></li>
+                                    <li><a href="index.html#servicios">Plataformas SaaS</a></li>
+                                    <li><a href="index.html#servicios">E-commerce</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mega-menu-section">
+                                <h4>deeb Advisory</h4>
+                                <p class="mega-menu-desc">Asesoría en transformación digital</p>
+                                <ul>
+                                    <li><a href="index.html#servicios">Arquitectura Empresarial</a></li>
+                                    <li><a href="index.html#servicios">Modernización Tecnológica</a></li>
+                                    <li><a href="index.html#servicios">Transformación Digital</a></li>
+                                    <li><a href="index.html#servicios">Consultoría Estratégica</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mega-menu-section mega-menu-highlight">
+                                <h4>¿Necesitas asesoría?</h4>
+                                <p>Conversemos sobre cómo podemos ayudarte a transformar tu empresa.</p>
+                                <a href="index.html#contacto" class="mega-menu-cta">Agendar reunión</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyectos Mega Menu -->
+                <div class="nav-item-mega">
+                    <a href="index.html#proyectos" class="nav-link">Proyectos <span>▾</span></a>
+                    
+                    <div class="mega-menu">
+                        <div class="mega-menu-container mega-menu-projects">
+                            <div class="mega-menu-section">
+                                <h4>TrackerPro</h4>
+                                <p class="mega-menu-desc">Sistema integral de gestión</p>
+                                <ul>
+                                    <li><a href="index.html#proyectos">Dashboard Analytics</a></li>
+                                    <li><a href="index.html#proyectos">Panel de Control</a></li>
+                                    <li><a href="index.html#proyectos">Gestión de Datos</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mega-menu-section">
+                                <h4>Otros Proyectos</h4>
+                                <p class="mega-menu-desc">Portfolio completo</p>
+                                <ul>
+                                    <li><a href="index.html#proyectos">E-commerce Solutions</a></li>
+                                    <li><a href="index.html#proyectos">Apps Móviles</a></li>
+                                    <li><a href="index.html#proyectos">Plataformas Web</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mega-menu-section mega-menu-highlight">
+                                <h4>¿Quieres ver más detalles?</h4>
+                                <p>Inicia sesión para explorar demos interactivas y casos de estudio completos.</p>
+                                <a href="index.html#login" class="mega-menu-cta mega-menu-cta-secondary">Ver demos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Link -->
+                <a href="blog.html" class="nav-link active">Blog</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="btn-login" onclick="window.location.href='index.html#login'">
+                    <span>Iniciar sesión</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 0L10 2L6 6H16V10H6L10 14L8 16L0 8L8 0Z" fill="currentColor" transform="rotate(180 8 8)"/>
+                    </svg>
+                </button>
+                
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="10" r="4" fill="currentColor"/>
+                        <path d="M10 0V3M10 17V20M20 10H17M3 10H0M16.66 16.66L14.83 14.83M5.17 5.17L3.34 3.34M16.66 3.34L14.83 5.17M5.17 14.83L3.34 16.66" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- BLOG HERO -->
+    <section class="blog-hero">
+        <div class="container">
+            <div class="blog-hero-content">
+                <h1>Blog de deeb</h1>
+                <p>Insights sobre tecnología, innovación y transformación digital</p>
+                <div class="blog-hero-tags">
+                    <button class="tag-filter active" data-filter="all">Todos</button>
+                    <button class="tag-filter" data-filter="studio">STUDIO</button>
+                    <button class="tag-filter" data-filter="advisory">Advisory</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG POSTS -->
+    <section class="blog-page">
+        <div class="container">
+            <div class="blog-page-grid" id="blog-posts-container">
+                <!-- Los artículos se cargan dinámicamente desde data/blog-posts.json -->
+                <div class="loading-posts">Cargando artículos...</div>
+                
+                <!-- FALLBACK: Article 1: STUDIO (se muestra si JS falla) -->
+                <article class="blog-card-full" data-category="studio">
+                    <div class="blog-image">
+                        <div class="blog-category studio">STUDIO</div>
+                        <div class="blog-image-placeholder blog-img-1">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <rect x="10" y="10" width="60" height="60" rx="8" fill="rgba(59, 130, 246, 0.1)"/>
+                                <path d="M30 35L40 45L50 35" stroke="#3B82F6" stroke-width="3" stroke-linecap="round"/>
+                                <circle cx="40" cy="40" r="15" stroke="#3B82F6" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">📅 10 Enero 2025</span>
+                            <span class="blog-reading">⏱️ 5 min lectura</span>
+                            <span class="blog-author">👤 Equipo deeb STUDIO</span>
+                        </div>
+                        <h2>De la Idea al Producto: Cómo Construir Apps Exitosas en 2025</h2>
+                        <p class="blog-excerpt">Descubre las mejores prácticas y herramientas modernas para desarrollar aplicaciones web y móviles que realmente resuelvan problemas de usuario. En este artículo exploramos el proceso completo desde la conceptualización hasta el lanzamiento.</p>
+                        <div class="blog-topics">
+                            <span class="topic">Desarrollo Web</span>
+                            <span class="topic">Apps Móviles</span>
+                            <span class="topic">UX/UI</span>
+                            <span class="topic">Product Management</span>
+                        </div>
+                        <a href="blog/de-la-idea-al-producto.html" class="blog-link-full">
+                            Leer artículo completo
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        <div class="blog-share">
+                            <span>Compartir:</span>
+                            <a href="https://twitter.com/intent/tweet?text=De la Idea al Producto&url=https://deeb.com/blog.html" target="_blank" aria-label="Compartir en Twitter">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://deeb.com/blog.html" target="_blank" aria-label="Compartir en LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://deeb.com/blog.html" target="_blank" aria-label="Compartir en Facebook">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M18 10c0-4.42-3.58-8-8-8s-8 3.58-8 8c0 3.99 2.93 7.3 6.75 7.9v-5.6H6.72V10h2.03V8.34c0-2 1.19-3.1 3.01-3.1.87 0 1.79.16 1.79.16v1.97h-1.01c-1 0-1.31.62-1.31 1.25V10h2.22l-.35 2.3h-1.87v5.6C15.07 17.3 18 13.99 18 10z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2: Advisory -->
+                <article class="blog-card-full" data-category="advisory">
+                    <div class="blog-image">
+                        <div class="blog-category advisory">Advisory</div>
+                        <div class="blog-image-placeholder blog-img-2">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <rect x="15" y="20" width="50" height="40" rx="4" fill="rgba(59, 130, 246, 0.1)"/>
+                                <path d="M25 30H55M25 40H55M25 50H45" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">📅 8 Enero 2025</span>
+                            <span class="blog-reading">⏱️ 7 min lectura</span>
+                            <span class="blog-author">👤 Equipo deeb Advisory</span>
+                        </div>
+                        <h2>Arquitectura Empresarial: El Mapa para la Transformación Digital</h2>
+                        <p class="blog-excerpt">Aprende cómo una arquitectura empresarial bien diseñada puede ser la clave para modernizar tu organización y alinear tecnología con negocio. Exploramos frameworks como TOGAF y casos de éxito reales.</p>
+                        <div class="blog-topics">
+                            <span class="topic">Arquitectura Empresarial</span>
+                            <span class="topic">TOGAF</span>
+                            <span class="topic">Estrategia TI</span>
+                            <span class="topic">Transformación</span>
+                        </div>
+                        <a href="blog/arquitectura-empresarial.html" class="blog-link-full">
+                            Leer artículo completo
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        <div class="blog-share">
+                            <span>Compartir:</span>
+                            <a href="https://twitter.com/intent/tweet?text=Arquitectura Empresarial&url=https://deeb.com/blog.html" target="_blank" aria-label="Compartir en Twitter">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://deeb.com/blog.html" target="_blank" aria-label="Compartir en LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://deeb.com/blog.html" target="_blank" aria-label="Compartir en Facebook">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M18 10c0-4.42-3.58-8-8-8s-8 3.58-8 8c0 3.99 2.93 7.3 6.75 7.9v-5.6H6.72V10h2.03V8.34c0-2 1.19-3.1 3.01-3.1.87 0 1.79.16 1.79.16v1.97h-1.01c-1 0-1.31.62-1.31 1.25V10h2.22l-.35 2.3h-1.87v5.6C15.07 17.3 18 13.99 18 10z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3: Advisory -->
+                <article class="blog-card-full" data-category="advisory">
+                    <div class="blog-image">
+                        <div class="blog-category advisory">Advisory</div>
+                        <div class="blog-image-placeholder blog-img-3">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <circle cx="25" cy="40" r="8" fill="rgba(59, 130, 246, 0.2)"/>
+                                <circle cx="40" cy="40" r="8" fill="rgba(59, 130, 246, 0.3)"/>
+                                <circle cx="55" cy="40" r="8" fill="rgba(59, 130, 246, 0.4)"/>
+                                <line x1="33" y1="40" x2="47" y2="40" stroke="#3B82F6" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">📅 5 Enero 2025</span>
+                            <span class="blog-reading">⏱️ 6 min lectura</span>
+                            <span class="blog-author">👤 Equipo deeb Advisory</span>
+                        </div>
+                        <h2>Migración a la Nube: Estrategias para una Modernización sin Riesgos</h2>
+                        <p class="blog-excerpt">Explora las metodologías probadas para migrar sistemas legacy a infraestructuras cloud modernas, minimizando downtime y maximizando ROI. Cubrimos AWS, Azure, GCP y estrategias híbridas.</p>
+                        <div class="blog-topics">
+                            <span class="topic">Cloud Computing</span>
+                            <span class="topic">AWS</span>
+                            <span class="topic">Azure</span>
+                            <span class="topic">Modernización</span>
+                        </div>
+                        <a href="blog/migracion-nube.html" class="blog-link-full">
+                            Leer artículo completo
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        <div class="blog-share">
+                            <span>Compartir:</span>
+                            <a href="https://twitter.com/intent/tweet?text=Migración a la Nube&url=https://deeb.com/blog.html" target="_blank" aria-label="Compartir en Twitter">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://deeb.com/blog.html" target="_blank" aria-label="Compartir en LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://deeb.com/blog.html" target="_blank" aria-label="Compartir en Facebook">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M18 10c0-4.42-3.58-8-8-8s-8 3.58-8 8c0 3.99 2.93 7.3 6.75 7.9v-5.6H6.72V10h2.03V8.34c0-2 1.19-3.1 3.01-3.1.87 0 1.79.16 1.79.16v1.97h-1.01c-1 0-1.31.62-1.31 1.25V10h2.22l-.35 2.3h-1.87v5.6C15.07 17.3 18 13.99 18 10z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 4: STUDIO -->
+                <article class="blog-card-full" data-category="studio">
+                    <div class="blog-image">
+                        <div class="blog-category studio">STUDIO</div>
+                        <div class="blog-image-placeholder blog-img-4">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <rect x="20" y="15" width="40" height="50" rx="4" fill="rgba(59, 130, 246, 0.1)"/>
+                                <circle cx="40" cy="30" r="5" fill="#3B82F6"/>
+                                <path d="M30 45H50M30 52H45" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">📅 3 Enero 2025</span>
+                            <span class="blog-reading">⏱️ 8 min lectura</span>
+                            <span class="blog-author">👤 Equipo deeb STUDIO</span>
+                        </div>
+                        <h2>SaaS vs Custom: ¿Cuál es la Mejor Opción para tu Negocio?</h2>
+                        <p class="blog-excerpt">Análisis detallado de las ventajas y desventajas de desarrollar software a medida versus adoptar soluciones SaaS existentes para tu empresa. Incluye matriz de decisión y casos de uso reales.</p>
+                        <div class="blog-topics">
+                            <span class="topic">SaaS</span>
+                            <span class="topic">Desarrollo Custom</span>
+                            <span class="topic">ROI</span>
+                            <span class="topic">Estrategia</span>
+                        </div>
+                        <a href="blog/saas-vs-custom.html" class="blog-link-full">
+                            Leer artículo completo
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        <div class="blog-share">
+                            <span>Compartir:</span>
+                            <a href="https://twitter.com/intent/tweet?text=SaaS vs Custom&url=https://deeb.com/blog.html" target="_blank" aria-label="Compartir en Twitter">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://deeb.com/blog.html" target="_blank" aria-label="Compartir en LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://deeb.com/blog.html" target="_blank" aria-label="Compartir en Facebook">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M18 10c0-4.42-3.58-8-8-8s-8 3.58-8 8c0 3.99 2.93 7.3 6.75 7.9v-5.6H6.72V10h2.03V8.34c0-2 1.19-3.1 3.01-3.1.87 0 1.79.16 1.79.16v1.97h-1.01c-1 0-1.31.62-1.31 1.25V10h2.22l-.35 2.3h-1.87v5.6C15.07 17.3 18 13.99 18 10z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Newsletter CTA -->
+            <div class="blog-newsletter-cta">
+                <h3>¿Te gustó este contenido?</h3>
+                <p>Suscríbete para recibir los últimos artículos sobre tecnología e innovación</p>
+                <form class="newsletter-form-inline">
+                    <input type="email" placeholder="tu@email.com" class="newsletter-input" required>
+                    <button type="submit" class="newsletter-btn">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2025 deeb. Todos los derechos reservados.</p>
+                <div class="footer-links-inline">
+                    <a href="index.html">Inicio</a>
+                    <a href="index.html#servicios">Servicios</a>
+                    <a href="index.html#proyectos">Proyectos</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Blog Engine Script -->
+    <script src="js/blog.js"></script>
+    
+    <script>
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', currentTheme);
+        
+        themeToggle.addEventListener('click', () => {
+            const theme = html.getAttribute('data-theme');
+            const newTheme = theme === 'light' ? 'dark' : 'light';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Blog Filter
+        const filterButtons = document.querySelectorAll('.tag-filter');
+        const blogCards = document.querySelectorAll('.blog-card-full');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+                
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                // Filter cards
+                blogCards.forEach(card => {
+                    if (filter === 'all') {
+                        card.style.display = 'flex';
+                    } else {
+                        const category = card.getAttribute('data-category');
+                        card.style.display = category === filter ? 'flex' : 'none';
+                    }
+                });
+            });
+        });
+
+        // Newsletter Form
+        document.querySelector('.newsletter-form-inline').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const emailInput = this.querySelector('.newsletter-input');
+            alert('¡Gracias por suscribirte! Te enviaremos noticias a ' + emailInput.value);
+            emailInput.value = '';
+        });
+    </script>
+</body>
+</html>

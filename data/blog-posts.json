@@ -1,0 +1,125 @@
+{
+  "posts": [
+    {
+      "id": "de-la-idea-al-producto",
+      "slug": "de-la-idea-al-producto",
+      "title": "De la Idea al Producto: Cómo Construir Apps Exitosas en 2025",
+      "excerpt": "Descubre las mejores prácticas y herramientas modernas para desarrollar aplicaciones web y móviles que realmente resuelvan problemas de usuario. En este artículo exploramos el proceso completo desde la conceptualización hasta el lanzamiento.",
+      "category": "studio",
+      "categoryLabel": "STUDIO",
+      "author": "Equipo deeb STUDIO",
+      "date": "2025-01-10",
+      "dateFormatted": "10 Enero 2025",
+      "readingTime": "5 min lectura",
+      "image": "images/blog/idea-producto.jpg",
+      "imageAlt": "Desarrollador trabajando en código en laptop con múltiples pantallas",
+      "topics": [
+        "Desarrollo Web",
+        "Apps Móviles",
+        "UX/UI",
+        "Product Management"
+      ],
+      "published": true,
+      "featured": true,
+      "metaDescription": "Descubre las mejores prácticas y herramientas modernas para desarrollar aplicaciones web y móviles que realmente resuelvan problemas de usuario.",
+      "ogImage": "images/blog/og/idea-producto.jpg"
+    },
+    {
+      "id": "arquitectura-empresarial",
+      "slug": "arquitectura-empresarial",
+      "title": "Arquitectura Empresarial: El Mapa para la Transformación Digital",
+      "excerpt": "Aprende cómo una arquitectura empresarial bien diseñada puede ser la clave para modernizar tu organización y alinear tecnología con negocio. Exploramos frameworks como TOGAF y casos de éxito reales.",
+      "category": "advisory",
+      "categoryLabel": "Advisory",
+      "author": "Equipo deeb Advisory",
+      "date": "2025-01-08",
+      "dateFormatted": "8 Enero 2025",
+      "readingTime": "7 min lectura",
+      "image": "images/blog/arquitectura-empresarial.jpg",
+      "imageAlt": "Diagrama de arquitectura empresarial en pizarra digital",
+      "topics": [
+        "Arquitectura Empresarial",
+        "TOGAF",
+        "Estrategia TI",
+        "Transformación"
+      ],
+      "published": true,
+      "featured": true,
+      "metaDescription": "Aprende cómo una arquitectura empresarial bien diseñada puede ser la clave para modernizar tu organización.",
+      "ogImage": "images/blog/og/arquitectura-empresarial.jpg"
+    },
+    {
+      "id": "migracion-nube",
+      "slug": "migracion-nube",
+      "title": "Migración a la Nube: Estrategias para una Modernización sin Riesgos",
+      "excerpt": "Explora las metodologías probadas para migrar sistemas legacy a infraestructuras cloud modernas, minimizando downtime y maximizando ROI. Cubrimos AWS, Azure, GCP y estrategias híbridas.",
+      "category": "advisory",
+      "categoryLabel": "Advisory",
+      "author": "Equipo deeb Advisory",
+      "date": "2025-01-05",
+      "dateFormatted": "5 Enero 2025",
+      "readingTime": "6 min lectura",
+      "image": "images/blog/migracion-nube.jpg",
+      "imageAlt": "Infraestructura cloud con servidores conectados",
+      "topics": [
+        "Cloud Computing",
+        "AWS",
+        "Azure",
+        "Modernización"
+      ],
+      "published": true,
+      "featured": false,
+      "metaDescription": "Explora las metodologías probadas para migrar sistemas legacy a infraestructuras cloud modernas.",
+      "ogImage": "images/blog/og/migracion-nube.jpg"
+    },
+    {
+      "id": "saas-vs-custom",
+      "slug": "saas-vs-custom",
+      "title": "SaaS vs Custom: ¿Cuál es la Mejor Opción para tu Negocio?",
+      "excerpt": "Análisis detallado de las ventajas y desventajas de desarrollar software a medida versus adoptar soluciones SaaS existentes para tu empresa. Incluye matriz de decisión y casos de uso reales.",
+      "category": "studio",
+      "categoryLabel": "STUDIO",
+      "author": "Equipo deeb STUDIO",
+      "date": "2025-01-03",
+      "dateFormatted": "3 Enero 2025",
+      "readingTime": "8 min lectura",
+      "image": "images/blog/saas-vs-custom.jpg",
+      "imageAlt": "Comparación visual entre soluciones SaaS y desarrollo custom",
+      "topics": [
+        "SaaS",
+        "Desarrollo Custom",
+        "ROI",
+        "Estrategia"
+      ],
+      "published": true,
+      "featured": false,
+      "metaDescription": "Análisis detallado de las ventajas y desventajas de desarrollar software a medida versus adoptar soluciones SaaS.",
+      "ogImage": "images/blog/og/saas-vs-custom.jpg"
+    }
+  ],
+  "categories": [
+    {
+      "id": "studio",
+      "label": "STUDIO",
+      "description": "Desarrollo y construcción de productos digitales",
+      "color": "#3B82F6"
+    },
+    {
+      "id": "advisory",
+      "label": "Advisory",
+      "description": "Asesoría en transformación digital",
+      "color": "#10B981"
+    }
+  ],
+  "settings": {
+    "blogTitle": "Blog de deeb",
+    "blogDescription": "Insights sobre tecnología, innovación y transformación digital",
+    "postsPerPage": 10,
+    "baseUrl": "https://deeb.com",
+    "socialLinks": {
+      "twitter": "https://twitter.com/deeb",
+      "linkedin": "https://www.linkedin.com/company/deeb",
+      "facebook": "https://www.facebook.com/deeb"
+    }
+  }
+}

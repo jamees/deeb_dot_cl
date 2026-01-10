@@ -1,0 +1,65 @@
+/* ============================================
+   TERMINAL-STYLE LOGO SVG
+   ============================================ */
+
+/* Logo Container */
+.hero-logo-container {
+    width: 100%;
+    max-width: 650px;
+    margin-bottom: 2rem;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.hero-logo-img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.15));
+}
+
+/* Logo Color Variables - Light Mode */
+:root,
+[data-theme="light"] {
+    --logo-box-bg: #5a7a96;
+    --logo-box-border: #7a9ab6;
+    --logo-inner-bg: #0f172a;
+    --logo-text-color: #f1f5f9;
+    --logo-b-color: #3b82f6;
+}
+
+/* Logo Color Variables - Dark Mode */
+[data-theme="dark"] {
+    --logo-box-bg: #334155;
+    --logo-box-border: #475569;
+    --logo-inner-bg: #0f172a;
+    --logo-text-color: #e2e8f0;
+    --logo-b-color: #60a5fa;
+}
+
+/* Responsive Logo Sizing */
+@media (max-width: 768px) {
+    .hero-logo-container {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-logo-container {
+        max-width: 300px;
+    }
+}
+
+/* Animation for the 'b' extending outside */
+@keyframes slideOut {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hero-logo-svg text:last-child {
+    animation: slideOut 0.6s ease-out 0.4s both;
+}

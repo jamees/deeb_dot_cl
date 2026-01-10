@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deeb - STUDIO & Advisory | Innovación Tecnológica</title>
+    <meta name="description" content="deeb STUDIO: Desarrollo de productos digitales. deeb Advisory: Transformación digital y arquitectura empresarial">
+    <link rel="stylesheet" href="css/modern-style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#inicio" class="logo">
+                <img src="images/image_logo_white.png" alt="deeb" class="logo-img">
+                <span class="logo-text">deeb</span>
+            </a>
+            
+            <nav class="nav">
+                <!-- Servicios Mega Menu -->
+                <div class="nav-item-mega">
+                    <a href="#servicios" class="nav-link">Servicios <span>▾</span></a>
+                    
+                    <div class="mega-menu">
+                        <div class="mega-menu-container">
+                            <div class="mega-menu-section">
+                                <h4>deeb STUDIO</h4>
+                                <p class="mega-menu-desc">Desarrollo y construcción de productos digitales</p>
+                                <ul>
+                                    <li><a href="#servicios">Aplicaciones Web</a></li>
+                                    <li><a href="#servicios">Aplicaciones Móviles</a></li>
+                                    <li><a href="#servicios">Plataformas SaaS</a></li>
+                                    <li><a href="#servicios">E-commerce</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mega-menu-section">
+                                <h4>deeb Advisory</h4>
+                                <p class="mega-menu-desc">Asesoría en transformación digital</p>
+                                <ul>
+                                    <li><a href="#servicios">Arquitectura Empresarial</a></li>
+                                    <li><a href="#servicios">Modernización Tecnológica</a></li>
+                                    <li><a href="#servicios">Transformación Digital</a></li>
+                                    <li><a href="#servicios">Consultoría Estratégica</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mega-menu-section mega-menu-highlight">
+                                <h4>¿Necesitas asesoría?</h4>
+                                <p>Conversemos sobre cómo podemos ayudarte a transformar tu empresa.</p>
+                                <a href="#contacto" class="mega-menu-cta">Agendar reunión</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyectos Mega Menu -->
+                <div class="nav-item-mega">
+                    <a href="#proyectos" class="nav-link">Proyectos <span>▾</span></a>
+                    
+                    <div class="mega-menu">
+                        <div class="mega-menu-container mega-menu-projects">
+                            <div class="mega-menu-section">
+                                <h4>TrackerPro</h4>
+                                <p class="mega-menu-desc">Sistema integral de gestión</p>
+                                <ul>
+                                    <li><a href="#proyectos">Dashboard Analytics</a></li>
+                                    <li><a href="#proyectos">Panel de Control</a></li>
+                                    <li><a href="#proyectos">Gestión de Datos</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mega-menu-section">
+                                <h4>Otros Proyectos</h4>
+                                <p class="mega-menu-desc">Portfolio completo</p>
+                                <ul>
+                                    <li><a href="#proyectos">E-commerce Solutions</a></li>
+                                    <li><a href="#proyectos">Apps Móviles</a></li>
+                                    <li><a href="#proyectos">Plataformas Web</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mega-menu-section mega-menu-highlight">
+                                <h4>¿Quieres ver más detalles?</h4>
+                                <p>Inicia sesión para explorar demos interactivas y casos de estudio completos.</p>
+                                <a href="#login" class="mega-menu-cta mega-menu-cta-secondary">Ver demos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Link -->
+                <a href="blog.html" class="nav-link">Blog</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="btn-login">
+                    <span>Iniciar sesión</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 0L10 2L6 6H16V10H6L10 14L8 16L0 8L8 0Z" fill="currentColor" transform="rotate(180 8 8)"/>
+                    </svg>
+                </button>
+                
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="4" fill="currentColor"/>
+                    <path d="M10 0V3M10 17V20M20 10H17M3 10H0M16.66 16.66L14.83 14.83M5.17 5.17L3.34 3.34M16.66 3.34L14.83 5.17M5.17 14.83L3.34 16.66" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" fill="currentColor"/>
+                </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="inicio">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-brand">
+                    <span class="brand-name">deeb</span>
+                    <span class="brand-service" id="brand-service">STUDIO</span>
+                </div>
+                <h1 class="hero-title" id="hero-title">Desarrollo y construcción de productos digitales</h1>
+                <p class="hero-subtitle" id="hero-subtitle">Creamos soluciones tecnológicas innovadoras para empresas de alto rendimiento</p>
+                <div class="hero-indicators">
+                    <span class="indicator active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                </div>
+                <button class="btn-primary">Conversemos</button>
+            </div>
+            <div class="hero-image">
+                <div class="shape-3d">
+                    <div class="shape-cone"></div>
+                    <div class="shape-sphere"></div>
+                    <div class="shape-circles">
+                        <div class="circle circle-1"></div>
+                        <div class="circle circle-2"></div>
+                        <div class="circle circle-3"></div>
+                        <div class="circle circle-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS SECTION -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <h2 class="section-title">Algunos de <strong>nuestros</strong> proyectos</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                            <circle cx="32" cy="32" r="28" fill="#EBF5FF"/>
+                            <path d="M32 18L26 28H38L32 18Z" fill="#3B82F6"/>
+                            <circle cx="32" cy="38" r="8" fill="#60A5FA"/>
+                        </svg>
+                    </div>
+                    <h3>Innovación y Asesoría</h3>
+                    <p>Soluciones estratégicas para llevar tus ideas al siguiente nivel.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                            <rect x="18" y="18" width="28" height="28" rx="4" fill="#EBF5FF"/>
+                            <path d="M28 26L32 30L36 26" stroke="#3B82F6" stroke-width="2"/>
+                            <path d="M28 34L32 38L36 34" stroke="#60A5FA" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Desarrollo de Software</h3>
+                    <p>Creamos aplicaciones personalizadas y de alta calidad.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                            <circle cx="24" cy="32" r="6" fill="#60A5FA"/>
+                            <circle cx="40" cy="24" r="6" fill="#3B82F6"/>
+                            <circle cx="40" cy="40" r="6" fill="#93C5FD"/>
+                            <line x1="24" y1="32" x2="40" y2="24" stroke="#3B82F6" stroke-width="2"/>
+                            <line x1="24" y1="32" x2="40" y2="40" stroke="#3B82F6" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Transformación Digital</h3>
+                    <p>Impulsamos la modernización y eficiencia en tu empresa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS SECTION -->
+    <section class="projects" id="proyectos">
+        <div class="container">
+            <h2 class="section-title">Algunos de <strong>nuestros proyectos</strong></h2>
+            
+            <div class="projects-grid">
+                <!-- TrackerPro 1 -->
+                <div class="project-card">
+                    <div class="project-image dashboard-1">
+                        <div class="chart-container">
+                            <div class="donut-chart"></div>
+                            <div class="line-chart"></div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>TrackerPro</h3>
+                        <p>Envía entradas de ideas de tabla preciso entradas. Invención caídas de mensaje esta agregadas.</p>
+                    </div>
+                </div>
+                
+                <!-- TrackerPro 2 -->
+                <div class="project-card">
+                    <div class="project-image dashboard-2">
+                        <div class="analytics-view">
+                            <div class="stat-card"></div>
+                            <div class="graph-area"></div>
+                            <div class="data-table"></div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>TrackerPro</h3>
+                        <p>Esta manera esos es fiscalización tanto esa la es que la organización esta en resultados todos no de.</p>
+                    </div>
+                </div>
+                
+                <!-- TrackerPro 3 -->
+                <div class="project-card">
+                    <div class="project-image dashboard-3">
+                        <div class="form-view">
+                            <div class="form-header"></div>
+                            <div class="form-fields"></div>
+                            <div class="form-button"></div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>TrackerPro</h3>
+                        <p>Papel limitadas la nuestra detalle de es información de de reacción pero el alineación todo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="blog-header">
+                <h2 class="section-title">Últimas <strong>publicaciones</strong></h2>
+                <p class="blog-subtitle">Insights sobre tecnología, innovación y transformación digital</p>
+            </div>
+            
+            <div class="blog-grid">
+                <!-- Article 1: STUDIO -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-category studio">STUDIO</div>
+                        <div class="blog-image-placeholder blog-img-1">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <rect x="10" y="10" width="60" height="60" rx="8" fill="rgba(59, 130, 246, 0.1)"/>
+                                <path d="M30 35L40 45L50 35" stroke="#3B82F6" stroke-width="3" stroke-linecap="round"/>
+                                <circle cx="40" cy="40" r="15" stroke="#3B82F6" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">10 Enero 2025</span>
+                            <span class="blog-reading">5 min lectura</span>
+                        </div>
+                        <h3>De la Idea al Producto: Cómo Construir Apps Exitosas en 2025</h3>
+                        <p>Descubre las mejores prácticas y herramientas modernas para desarrollar aplicaciones web y móviles que realmente resuelvan problemas de usuario.</p>
+                        <a href="#blog-detail" class="blog-link">
+                            Leer más
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Article 2: Advisory -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-category advisory">Advisory</div>
+                        <div class="blog-image-placeholder blog-img-2">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <rect x="15" y="20" width="50" height="40" rx="4" fill="rgba(59, 130, 246, 0.1)"/>
+                                <path d="M25 30H55M25 40H55M25 50H45" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">8 Enero 2025</span>
+                            <span class="blog-reading">7 min lectura</span>
+                        </div>
+                        <h3>Arquitectura Empresarial: El Mapa para la Transformación Digital</h3>
+                        <p>Aprende cómo una arquitectura empresarial bien diseñada puede ser la clave para modernizar tu organización y alinear tecnología con negocio.</p>
+                        <a href="#blog-detail" class="blog-link">
+                            Leer más
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Article 3: Advisory -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-category advisory">Advisory</div>
+                        <div class="blog-image-placeholder blog-img-3">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <circle cx="25" cy="40" r="8" fill="rgba(59, 130, 246, 0.2)"/>
+                                <circle cx="40" cy="40" r="8" fill="rgba(59, 130, 246, 0.3)"/>
+                                <circle cx="55" cy="40" r="8" fill="rgba(59, 130, 246, 0.4)"/>
+                                <line x1="33" y1="40" x2="47" y2="40" stroke="#3B82F6" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">5 Enero 2025</span>
+                            <span class="blog-reading">6 min lectura</span>
+                        </div>
+                        <h3>Migración a la Nube: Estrategias para una Modernización sin Riesgos</h3>
+                        <p>Explora las metodologías probadas para migrar sistemas legacy a infraestructuras cloud modernas, minimizando downtime y maximizando ROI.</p>
+                        <a href="#blog-detail" class="blog-link">
+                            Leer más
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Article 4: STUDIO -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-category studio">STUDIO</div>
+                        <div class="blog-image-placeholder blog-img-4">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <rect x="20" y="15" width="40" height="50" rx="4" fill="rgba(59, 130, 246, 0.1)"/>
+                                <circle cx="40" cy="30" r="5" fill="#3B82F6"/>
+                                <path d="M30 45H50M30 52H45" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">3 Enero 2025</span>
+                            <span class="blog-reading">8 min lectura</span>
+                        </div>
+                        <h3>SaaS vs Custom: ¿Cuál es la Mejor Opción para tu Negocio?</h3>
+                        <p>Análisis detallado de las ventajas y desventajas de desarrollar software a medida versus adoptar soluciones SaaS existentes para tu empresa.</p>
+                        <a href="#blog-detail" class="blog-link">
+                            Leer más
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="blog-cta">
+                <a href="blog.html" class="btn-secondary">Ver todos los artículos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Columna 1: Sobre nosotros -->
+                <div class="footer-col">
+                    <h4>Sobre deeb STUDIO</h4>
+                    <p class="footer-description">Asesoría y desarrollo de software para empresas de alto rendimiento. Transformamos ideas en soluciones tecnológicas innovadoras.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 4.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.165 20 14.418 20 10c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Servicios -->
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="#servicios">Desarrollo de Software</a></li>
+                        <li><a href="#servicios">Consultoría Tecnológica</a></li>
+                        <li><a href="#servicios">Transformación Digital</a></li>
+                        <li><a href="#servicios">Innovación y Estrategia</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Empresa -->
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Sobre nosotros</a></li>
+                        <li><a href="#proyectos">Portafolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Legal -->
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Aviso Legal</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <div class="newsletter-content">
+                    <h3>Suscríbete a nuestro newsletter</h3>
+                    <p>Recibe las últimas noticias sobre tecnología e innovación directamente en tu correo.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="tu@email.com" class="newsletter-input" required>
+                    <button type="submit" class="newsletter-btn">Suscribirse</button>
+                </form>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>© 2025 deeb STUDIO. Todos los derechos reservados.</p>
+                <p class="footer-tagline">Innovación Tecnológica para el futuro</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Chat Button -->
+    <button class="chat-button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2C6.48 2 2 6.48 2 12C2 13.85 2.59 15.57 3.58 17L2 22L7 20.42C8.43 21.41 10.15 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="white"/>
+        </svg>
+    </button>
+
+    <script>
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        
+        // Check for saved theme preference or default to 'light'
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', currentTheme);
+        
+        themeToggle.addEventListener('click', () => {
+            const theme = html.getAttribute('data-theme');
+            const newTheme = theme === 'light' ? 'dark' : 'light';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Hero Carousel
+        const slides = [
+            {
+                service: 'STUDIO',
+                title: 'Desarrollo y construcción de productos digitales',
+                subtitle: 'Creamos soluciones tecnológicas innovadoras para empresas de alto rendimiento'
+            },
+            {
+                service: 'Advisory',
+                title: 'Asesoría en transformación digital y arquitectura empresarial',
+                subtitle: 'Modernizamos tu infraestructura tecnológica con estrategias empresariales efectivas'
+            }
+        ];
+
+        let currentSlide = 0;
+        const brandService = document.getElementById('brand-service');
+        const heroTitle = document.getElementById('hero-title');
+        const heroSubtitle = document.getElementById('hero-subtitle');
+        const indicators = document.querySelectorAll('.indicator');
+
+        function changeSlide(index) {
+            // Fade out
+            brandService.classList.add('fade-out');
+            heroTitle.classList.add('fade-out');
+            heroSubtitle.classList.add('fade-out');
+
+            setTimeout(() => {
+                currentSlide = index;
+                const slide = slides[currentSlide];
+                
+                // Update content
+                brandService.textContent = slide.service;
+                heroTitle.textContent = slide.title;
+                heroSubtitle.textContent = slide.subtitle;
+
+                // Update indicators
+                indicators.forEach((ind, i) => {
+                    ind.classList.toggle('active', i === currentSlide);
+                });
+
+                // Fade in
+                brandService.classList.remove('fade-out');
+                heroTitle.classList.remove('fade-out');
+                heroSubtitle.classList.remove('fade-out');
+                brandService.classList.add('fade-in');
+                heroTitle.classList.add('fade-in');
+                heroSubtitle.classList.add('fade-in');
+            }, 300);
+        }
+
+        // Auto slide every 5 seconds
+        setInterval(() => {
+            const nextSlide = (currentSlide + 1) % slides.length;
+            changeSlide(nextSlide);
+        }, 5000);
+
+        // Manual slide change
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                changeSlide(index);
+            });
+        });
+
+        // Smooth Scroll para los enlaces de navegación, logo, footer, mega menu y blog
+        document.querySelectorAll('.nav-link, .logo, .footer-links a, .mega-menu-section a, .mega-menu-cta, .btn-secondary').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                
+                // Solo aplicar si es un anchor link (comienza con #)
+                if (href && href.startsWith('#')) {
+                    e.preventDefault();
+                    const targetId = href.substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Newsletter Form Handler
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const emailInput = this.querySelector('.newsletter-input');
+            const email = emailInput.value;
+            
+            // Aquí podrías agregar la lógica para enviar el email a tu backend
+            alert('¡Gracias por suscribirte! Te enviaremos noticias a ' + email);
+            emailInput.value = '';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+/* ============================================
+   THEME SYSTEM - Light & Dark Mode
+   ============================================ */
+
+/* Light Mode (Default) - Based on deeb logo */
+:root,
+[data-theme="light"] {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --bg-tertiary: #e8f0f7;
+    
+    --text-primary: #0f172a;
+    --text-secondary: #334155;
+    --text-tertiary: #64748b;
+    
+    --blue-primary: #5a7a96;
+    --blue-dark: #0f172a;
+    --blue-light: #7a9ab6;
+    --blue-accent: #3b82f6;
+    
+    --card-bg: #ffffff;
+    --card-border: #e2e8f0;
+    --card-shadow: rgba(15, 23, 42, 0.08);
+    --card-shadow-hover: rgba(15, 23, 42, 0.12);
+    
+    --header-bg: #ffffff;
+    --header-shadow: rgba(15, 23, 42, 0.05);
+    
+    --footer-bg: #0f172a;
+    --footer-text: #f1f5f9;
+    
+    --input-bg: #ffffff;
+    --input-border: #e2e8f0;
+    --input-focus: #3b82f6;
+}
+
+/* Dark Mode - Based on deeb logo dark version */
+[data-theme="dark"] {
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --bg-tertiary: #334155;
+    
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --text-tertiary: #94a3b8;
+    
+    --blue-primary: #7a9ab6;
+    --blue-dark: #5a7a96;
+    --blue-light: #93c5fd;
+    --blue-accent: #60a5fa;
+    
+    --card-bg: #1e293b;
+    --card-border: #334155;
+    --card-shadow: rgba(0, 0, 0, 0.3);
+    --card-shadow-hover: rgba(0, 0, 0, 0.5);
+    
+    --header-bg: #1e293b;
+    --header-shadow: rgba(0, 0, 0, 0.3);
+    
+    --footer-bg: #0f172a;
+    --footer-text: #cbd5e1;
+    
+    --input-bg: #1e293b;
+    --input-border: #334155;
+    --input-focus: #60a5fa;
+}
+
+/* Smooth transitions for theme changes */
+body,
+header,
+footer,
+.info-card,
+.project-card,
+.service-card,
+.blog-card,
+.resource-card,
+.contact-form,
+.contact-link,
+input,
+textarea,
+button {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: var(--card-bg);
+    border: 2px solid var(--card-border);
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.05);
+    border-color: var(--blue-accent);
+}
+
+/* Show/Hide icons based on theme */
+[data-theme="light"] .moon-icon {
+    display: inline;
+}
+
+[data-theme="light"] .sun-icon {
+    display: none;
+}
+
+[data-theme="dark"] .sun-icon {
+    display: inline;
+}
+
+[data-theme="dark"] .moon-icon {
+    display: none;
+}
+
+/* Apply theme colors to body */
+body {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+/* Header */
+.main-header {
+    background: var(--header-bg);
+    box-shadow: 0 2px 10px var(--header-shadow);
+}
+
+.main-header nav ul li a {
+    color: var(--text-secondary);
+}
+
+.main-header nav ul li a:hover {
+    color: var(--blue-accent);
+}
+
+/* Hero Section - Dark mode specific */
+[data-theme="dark"] .hero-section {
+    background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+}
+
+/* Cards */
+.info-card,
+.service-card,
+.blog-card,
+.resource-card {
+    background: var(--card-bg);
+    box-shadow: 0 4px 15px var(--card-shadow);
+}
+
+.info-card:hover,
+.service-card:hover,
+.blog-card:hover,
+.resource-card:hover {
+    box-shadow: 0 8px 25px var(--card-shadow-hover);
+}
+
+.info-card h3,
+.service-card h3,
+.blog-card h3,
+.resource-card h3 {
+    color: var(--blue-primary);
+}
+
+.info-card p,
+.service-card p,
+.blog-card p,
+.resource-card p {
+    color: var(--text-secondary);
+}
+
+/* About Section */
+.about-section {
+    background: var(--bg-primary);
+}
+
+.about-text h2,
+.subsection-title {
+    color: var(--blue-primary);
+}
+
+.about-text p,
+.about-text li {
+    color: var(--text-secondary);
+}
+
+.manifesto {
+    background: var(--bg-tertiary);
+    border-left-color: var(--blue-accent);
+}
+
+.manifesto p {
+    color: var(--text-primary);
+}
+
+/* Services Section */
+.services-section {
+    background: var(--bg-secondary);
+}
+
+/* Projects - Dark card in dark mode */
+[data-theme="dark"] .project-card.dark-card {
+    background: #0f172a;
+}
+
+/* Blog Section */
+.blog-section {
+    background: var(--bg-secondary);
+}
+
+.section-title {
+    color: var(--blue-primary);
+}
+
+.section-intro {
+    color: var(--text-secondary);
+}
+
+/* Quote Section */
+.quote-section {
+    background: var(--bg-primary);
+}
+
+.quote-section blockquote {
+    color: var(--blue-primary);
+}
+
+/* Resources Section */
+.resources-section {
+    background: var(--bg-primary);
+}
+
+.resource-card {
+    background: var(--bg-secondary);
+}
+
+/* Contact Section */
+.contact-section {
+    background: var(--bg-secondary);
+}
+
+.contact-form {
+    background: var(--card-bg);
+    box-shadow: 0 4px 15px var(--card-shadow);
+}
+
+.form-group label {
+    color: var(--blue-primary);
+}
+
+.form-group input,
+.form-group textarea {
+    background: var(--input-bg);
+    border-color: var(--input-border);
+    color: var(--text-primary);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--input-focus);
+}
+
+.contact-link {
+    background: var(--card-bg);
+    color: var(--text-secondary);
+    box-shadow: 0 2px 10px var(--card-shadow);
+}
+
+.contact-link:hover {
+    color: var(--blue-accent);
+    box-shadow: 0 4px 15px var(--card-shadow-hover);
+}
+
+/* Footer */
+footer {
+    background: var(--footer-bg);
+    color: var(--footer-text);
+}
+
+/* Newsletter */
+.email-input {
+    background: var(--input-bg);
+    color: var(--text-primary);
+}
+
+/* Category Tags */
+.category-tag {
+    background: var(--bg-tertiary);
+    color: var(--blue-primary);
+}
+
+/* Service List */
+.service-list li {
+    color: var(--text-secondary);
+}
+
+.service-list li::before {
+    color: var(--blue-accent);
+}
+
+/* Project Highlights */
+.project-highlights li {
+    color: var(--text-secondary);
+}
+
+.project-highlights li::before {
+    color: var(--blue-accent);
+}
+
+/* Lead text */
+.lead {
+    color: var(--blue-accent);
+}
+
+/* Dark mode logo adjustment */
+[data-theme="dark"] .logo-text {
+    background: linear-gradient(135deg, #ffffff 0%, #60a5fa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .theme-toggle {
+        padding: 0.4rem 0.8rem;
+        font-size: 1rem;
+    }
+}
+
+/* Additional contrast improvements for dark mode */
+[data-theme="dark"] .hero-logo .logo-deeb {
+    background: linear-gradient(135deg, #ffffff 0%, #93c5fd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Better badge visibility in dark mode */
+[data-theme="dark"] .badge {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border-color: var(--card-border);
+}
+
+/* Responsive header adjustments */
+@media (max-width: 768px) {
+    .main-header {
+        padding: 0.5rem 1rem;
+    }
+    
+    section {
+        scroll-margin-top: 60px;
+    }
+}
