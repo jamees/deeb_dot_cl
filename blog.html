@@ -32,6 +32,7 @@
     <link rel="icon" type="image/png" href="images/image_logo_white.png">
     
     <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="css/mobile-menu.css">
 </head>
 <body>
     <!-- HEADER -->
@@ -135,6 +136,13 @@
                     <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" fill="currentColor"/>
                     </svg>
+                </button>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="burger-menu" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
             </div>
         </div>
@@ -453,5 +461,8 @@
             emailInput.value = '';
         });
     </script>
+    
+    <!-- Mobile Menu Script -->
+    <script type="module" src="js/mobile-menu.js"></script>
 </body>
 </html>

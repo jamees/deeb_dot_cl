@@ -18,7 +18,7 @@ npm install
 
 ### Scripts disponibles
 
-#### Desarrollo
+#### Desarrollo (con actualización automática)
 
 ```bash
 npm run dev
@@ -26,7 +26,22 @@ npm run dev
 npm start
 ```
 
-Inicia un servidor de desarrollo con **Vite** y hot-reload en `http://localhost:3000`. Los cambios se reflejarán automáticamente en el navegador.
+Inicia un servidor de desarrollo con **Vite** y **Hot Module Replacement (HMR)** en `http://localhost:3000`.
+
+**✨ Características del modo desarrollo:**
+- 🔥 **Actualización instantánea**: Los cambios en CSS se aplican sin recargar
+- ⚡ **Recarga automática**: HTML y JS se actualizan al guardar
+- 🚀 **Rápido**: Compilación ultra-rápida con Vite
+- 🔧 **Source maps**: Debugging fácil con archivos originales
+
+**💡 Workflow:**
+1. Ejecuta `npm run dev` (deja el terminal abierto)
+2. Abre http://localhost:3000 en tu navegador
+3. Edita cualquier archivo (HTML, CSS, JS)
+4. Guarda (Ctrl/Cmd + S)
+5. Ve los cambios instantáneamente en el navegador
+
+**🛑 Para detener:** Presiona `Ctrl + C` en el terminal
 
 #### Build/Empaquetado
 
@@ -63,6 +78,16 @@ Previsualiza el build de producción localmente en `http://localhost:8080`.
 npm run legacy:dev      # Live server simple
 npm run legacy:serve    # HTTP server básico
 ```
+
+### 📊 Comparación de modos
+
+| Modo | Actualización | Velocidad | Optimización | Uso |
+|------|---------------|-----------|--------------|-----|
+| **dev** | Automática ⚡ | Ultra-rápido | No | Desarrollo diario |
+| **preview** | Manual 🔄 | Rápido | Sí ✅ | Testing pre-deploy |
+| **build** | - | Medio | Sí ✅ | Deploy producción |
+
+**Recomendación:** Usa `npm run dev` para desarrollo y `npm run build` solo cuando vayas a desplegar.
 
 ## 📁 Estructura del proyecto
 
