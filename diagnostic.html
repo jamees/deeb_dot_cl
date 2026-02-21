@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico de Madurez - Modelo de Modernización Tecnológica</title>
+    <meta name="description" content="Herramienta interactiva para evaluar el nivel de madurez de modernización tecnológica de tu empresa.">
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="css/mobile-menu.css">
+    <link rel="stylesheet" href="css/diagnostic.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/header.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <div id="header-container"></div>
+
+    <!-- HERO SECTION -->
+    <section class="hero" style="background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-white) 100%);">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" style="font-size: 2.5rem; margin-bottom: 1rem;">Diagnóstico de Madurez</h1>
+                <p class="hero-subtitle" style="font-size: 1.2rem; margin-bottom: 1.5rem;">Evalúa el nivel actual de modernización tecnológica de tu empresa en 5 dimensiones clave.</p>
+                <p style="color: var(--text-gray); margin-bottom: 2rem; line-height: 1.7;">Responde 20 preguntas simples y obtén un análisis detallado de dónde estás y hacia dónde necesitas ir.</p>
+            </div>
+            <div class="hero-image" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(16, 185, 129, 0.05) 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+                    <rect x="30" y="50" width="140" height="100" rx="8" fill="rgba(16, 185, 129, 0.2)"/>
+                    <path d="M50 80H150M50 100H150M50 120H120" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="60" cy="60" r="8" fill="#10B981"/>
+                    <circle cx="140" cy="60" r="8" fill="#10B981"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIAGNOSTIC FORM -->
+    <section class="services" style="background: var(--bg-white);">
+        <div class="diagnostic-container">
+            <div id="diagnostic-container"></div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <button id="submit-diagnostic" class="btn-primary" style="background: var(--primary-blue); padding: 1rem 3rem; font-size: 1.1rem;" onclick="showResults(calculateResults())">
+                    Ver Resultados
+                </button>
+                <p style="color: var(--text-gray); margin-top: 1rem; font-size: 0.9rem;">Completa todas las preguntas para ver tus resultados</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT BENCHMARKS -->
+    <section style="background: var(--bg-light); padding: 3rem 0;">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto; background: var(--bg-white); padding: 2rem; border-radius: 12px; border-left: 4px solid #10B981;">
+                <h3 style="color: var(--text-dark); margin-top: 0;">Acerca de los Benchmarks</h3>
+                <p style="color: var(--text-gray); line-height: 1.7;">Los benchmarks utilizados en esta herramienta son <strong>estimaciones indicativas</strong> basadas en:</p>
+                
+                <ul style="color: var(--text-gray); line-height: 1.8; margin: 1.5rem 0;">
+                    <li><strong>Modelos de madurez de capacidad:</strong> CMM/CMMI (Carnegie Mellon University)</li>
+                    <li><strong>Estudios de transformación digital:</strong> Gartner, McKinsey, Forrester</li>
+                    <li><strong>Datos de adopción tecnológica:</strong> Reportes de industria por sector</li>
+                    <li><strong>Experiencia práctica:</strong> Proyectos de modernización de deeb</li>
+                </ul>
+                
+                <p style="color: var(--text-gray); line-height: 1.7; margin-bottom: 1rem;"><strong>Importante:</strong> Estos datos <strong>no representan un estudio estadístico formal</strong> y se utilizan como referencia comparativa para contextualizar tu posición relativa.</p>
+                
+                <p style="color: var(--text-gray); line-height: 1.7;"><strong>Para un análisis más preciso:</strong></p>
+                <ul style="color: var(--text-gray); line-height: 1.8;">
+                    <li>Consulta reportes de <a href="https://www.gartner.com" target="_blank" style="color: #10B981; text-decoration: none; font-weight: 600;">Gartner Magic Quadrant</a></li>
+                    <li>Revisa estudios de <a href="https://www.mckinsey.com" target="_blank" style="color: #10B981; text-decoration: none; font-weight: 600;">McKinsey sobre transformación digital</a></li>
+                    <li><a href="index.html#contacto" style="color: #10B981; text-decoration: none; font-weight: 600;">Contacta con deeb</a> para un análisis personalizado</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Diagnóstico de Madurez</h4>
+                    <p class="footer-description">Herramienta interactiva para evaluar tu nivel de modernización tecnológica.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Recursos</h4>
+                    <ul class="footer-links">
+                        <li><a href="maturity-model.html">Modelo Completo</a></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#servicios">Servicios</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 deeb Advisory. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/diagnostic.js"></script>
+</body>
+</html>

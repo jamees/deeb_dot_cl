@@ -45,6 +45,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Cerrar menú cuando se hace click en un link de navegación
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                closeMenu();
+            }
+        });
+    });
+
     // Cerrar menú cuando se hace click en un link del mega menu
     megaMenuLinks.forEach(link => {
         link.addEventListener('click', function() {

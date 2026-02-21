@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Madurez de Modernización Tecnológica | deeb</title>
+    <meta name="description" content="Evalúa el nivel de modernización de tu empresa. Identifica dónde estás, define dónde necesitas ir y construye un roadmap realista.">
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="css/mobile-menu.css">
+    <script src="js/header.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <div id="header-container"></div>
+
+    <!-- HERO SECTION -->
+    <section class="hero" style="background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-white) 100%);">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" style="font-size: 2.5rem; margin-bottom: 1rem;">Modelo de Madurez de Modernización Tecnológica</h1>
+                <p class="hero-subtitle" style="font-size: 1.2rem; margin-bottom: 1.5rem;">Evalúa el nivel actual de tu empresa, define el nivel adecuado según tu estrategia y construye un roadmap realista para cerrar la brecha sin sobreinvertir.</p>
+                <p style="color: var(--text-gray); margin-bottom: 2rem; line-height: 1.7;">Modernizar no significa perseguir la última tecnología. Significa reducir incertidumbre, aumentar capacidad de cambio y alinear tecnología con valor de negocio.</p>
+                <button class="btn-primary" style="background: var(--primary-blue);" onclick="window.location.href='diagnostic.html'">Hacer diagnóstico</button>
+            </div>
+            <div class="hero-image" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(16, 185, 129, 0.05) 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+                    <rect x="30" y="50" width="140" height="100" rx="8" fill="rgba(16, 185, 129, 0.2)"/>
+                    <path d="M50 80H150M50 100H150M50 120H120" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="60" cy="60" r="8" fill="#10B981"/>
+                    <circle cx="140" cy="60" r="8" fill="#10B981"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2: ¿QUÉ SIGNIFICA ESTAR MODERNIZADO? -->
+    <section class="services" style="background: var(--bg-white);">
+        <div class="container">
+            <h2 class="section-title">¿Qué significa <strong>estar modernizado?</strong></h2>
+            
+            <div style="max-width: 900px; margin: 0 auto;">
+                <p style="text-align: center; color: var(--text-gray); font-size: 1.1rem; margin-bottom: 3rem; font-style: italic;">Modernización no es un destino máximo. Es alcanzar el nivel adecuado para tu industria y etapa de crecimiento.</p>
+                
+                <div class="services-grid" style="grid-template-columns: 1fr;">
+                    <div style="background: var(--bg-light); padding: 2rem; border-radius: 12px;">
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li style="padding: 1rem 0; padding-left: 2rem; position: relative; border-bottom: 1px solid var(--border-color);">
+                                <span style="position: absolute; left: 0; color: #10B981; font-weight: bold;">✓</span>
+                                <strong>Claridad sobre arquitectura y prioridades</strong> — Sabes qué tienes, por qué lo tienes y hacia dónde vas.
+                            </li>
+                            <li style="padding: 1rem 0; padding-left: 2rem; position: relative; border-bottom: 1px solid var(--border-color);">
+                                <span style="position: absolute; left: 0; color: #10B981; font-weight: bold;">✓</span>
+                                <strong>Capacidad de cambiar sin romper</strong> — Puedes innovar sin paralizar la operación.
+                            </li>
+                            <li style="padding: 1rem 0; padding-left: 2rem; position: relative; border-bottom: 1px solid var(--border-color);">
+                                <span style="position: absolute; left: 0; color: #10B981; font-weight: bold;">✓</span>
+                                <strong>Decisiones basadas en datos</strong> — Usas información para decidir, no intuición.
+                            </li>
+                            <li style="padding: 1rem 0; padding-left: 2rem; position: relative; border-bottom: 1px solid var(--border-color);">
+                                <span style="position: absolute; left: 0; color: #10B981; font-weight: bold;">✓</span>
+                                <strong>Control de riesgos tecnológicos</strong> — Identificas y mitiga riesgos antes de que se conviertan en crisis.
+                            </li>
+                            <li style="padding: 1rem 0; padding-left: 2rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: #10B981; font-weight: bold;">✓</span>
+                                <strong>Inversión donde genera valor</strong> — Cada peso en tecnología tiene un retorno claro.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 3: LOS 5 NIVELES DE MADUREZ -->
+    <section class="projects" style="background: var(--bg-light);">
+        <div class="container">
+            <h2 class="section-title">Los 5 <strong>Niveles de Madurez</strong></h2>
+            
+            <p style="text-align: center; color: var(--text-gray); margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">Cada empresa se encuentra en un nivel distinto. El objetivo es identificar dónde estás y hacia dónde necesitas ir.</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <!-- Nivel 1 -->
+                <div style="background: var(--bg-white); padding: 2rem; border-radius: 12px; border-left: 4px solid #EF4444;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 40px; height: 40px; background: #EF4444; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">1</div>
+                        <h3 style="margin: 0;">Inicial</h3>
+                    </div>
+                    <p style="color: var(--text-gray); margin-bottom: 1rem; font-size: 0.95rem;"><strong>Característica:</strong> Operación reactiva y dependiente de personas clave.</p>
+                    <p style="color: var(--text-gray); margin-bottom: 1rem; font-size: 0.9rem;"><strong>Qué logra:</strong> Mantiene operaciones en funcionamiento, resuelve problemas sobre la marcha.</p>
+                    <p style="color: var(--text-gray); font-size: 0.9rem;"><strong>Para:</strong> Startups muy tempranas o empresas en crisis operativa.</p>
+                </div>
+
+                <!-- Nivel 2 -->
+                <div style="background: var(--bg-white); padding: 2rem; border-radius: 12px; border-left: 4px solid #F97316;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 40px; height: 40px; background: #F97316; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">2</div>
+                        <h3 style="margin: 0;">Repetible</h3>
+                    </div>
+                    <p style="color: var(--text-gray); margin-bottom: 1rem; font-size: 0.95rem;"><strong>Característica:</strong> Procesos básicos documentados, resultados inconsistentes.</p>
+                    <p style="color: var(--text-gray); margin-bottom: 1rem; font-size: 0.9rem;"><strong>Qué logra:</strong> Reduce dependencia de individuos, establece prácticas básicas.</p>
+                    <p style="color: var(--text-gray); font-size: 0.9rem;"><strong>Para:</strong> Empresas pequeñas estables o en crecimiento inicial.</p>
+                </div>
+
+                <!-- Nivel 3 -->
+                <div style="background: var(--bg-white); padding: 2rem; border-radius: 12px; border-left: 4px solid #FBBF24;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 40px; height: 40px; background: #FBBF24; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">3</div>
+                        <h3 style="margin: 0;">Definido</h3>
+                    </div>
+                    <p style="color: var(--text-gray); margin-bottom: 1rem; font-size: 0.95rem;"><strong>Característica:</strong> Prácticas claras, estructura estable y dirección alineada al negocio.</p>
+                    <p style="color: var(--text-gray); margin-bottom: 1rem; font-size: 0.9rem;"><strong>Qué logra:</strong> Arquitectura clara, procesos consistentes, alineación TI-negocio.</p>
+                    <p style="color: var(--text-gray); font-size: 0.9rem;"><strong>Para:</strong> Empresas medianas o grandes con operación estable.</p>
+                </div>
+
+                <!-- Nivel 4 -->
+                <div style="background: var(--bg-white); padding: 2rem; border-radius: 12px; border-left: 4px solid #60A5FA;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 40px; height: 40px; background: #60A5FA; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">4</div>
+                        <h3 style="margin: 0;">Gestionado</h3>
+                    </div>
+                    <p style="color: var(--text-gray); margin-bottom: 1rem; font-size: 0.95rem;"><strong>Característica:</strong> Métricas, control y alineación estratégica profunda.</p>
+                    <p style="color: var(--text-gray); margin-bottom: 1rem; font-size: 0.9rem;"><strong>Qué logra:</strong> Decisiones basadas en datos, automatización, gestión de riesgos.</p>
+                    <p style="color: var(--text-gray); font-size: 0.9rem;"><strong>Para:</strong> Empresas grandes o en crecimiento acelerado.</p>
+                </div>
+
+                <!-- Nivel 5 -->
+                <div style="background: var(--bg-white); padding: 2rem; border-radius: 12px; border-left: 4px solid #10B981;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 40px; height: 40px; background: #10B981; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">5</div>
+                        <h3 style="margin: 0;">Optimizado</h3>
+                    </div>
+                    <p style="color: var(--text-gray); margin-bottom: 1rem; font-size: 0.95rem;"><strong>Característica:</strong> Mejora continua e innovación sistemática.</p>
+                    <p style="color: var(--text-gray); margin-bottom: 1rem; font-size: 0.9rem;"><strong>Qué logra:</strong> Anticipa cambios, innova constantemente, lidera con tecnología.</p>
+                    <p style="color: var(--text-gray); font-size: 0.9rem;"><strong>Para:</strong> Empresas digitales o líderes de mercado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 4: DIMENSIONES EVALUADAS -->
+    <section class="services" style="background: var(--bg-white);">
+        <div class="container">
+            <h2 class="section-title">Las 5 <strong>Dimensiones de Modernización</strong></h2>
+            
+            <p style="text-align: center; color: var(--text-gray); margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">Una empresa no tiene un único nivel de madurez. Cada dimensión puede estar en un nivel distinto. El diagnóstico evalúa las cinco áreas clave.</p>
+            
+            <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 1000px; margin: 0 auto;">
+                <!-- Dimensión 1 -->
+                <div style="background: var(--bg-light); padding: 2rem; border-radius: 12px;">
+                    <h3 style="color: #10B981; margin-top: 0;">Estrategia & Gobernanza</h3>
+                    <p style="color: var(--text-gray); margin-bottom: 1rem;"><strong>Qué evalúa:</strong> Alineación entre decisiones tecnológicas y objetivos de negocio.</p>
+                    
+                    <p style="color: var(--text-gray); margin-bottom: 0.5rem; font-size: 0.95rem;"><strong>Nivel bajo (1–2):</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1rem 0; font-size: 0.9rem;">
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Decisiones tecnológicas desconectadas de estrategia
+                        </li>
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            No hay gobernanza clara
+                        </li>
+                    </ul>
+                    
+                    <p style="color: var(--text-gray); margin-bottom: 0.5rem; font-size: 0.95rem;"><strong>Nivel medio (3):</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1rem 0; font-size: 0.9rem;">
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Estrategia tecnológica documentada
+                        </li>
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Decisiones alineadas con negocio
+                        </li>
+                    </ul>
+                    
+                    <p style="color: var(--text-gray); margin-bottom: 0.5rem; font-size: 0.95rem;"><strong>Nivel alto (4–5):</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem;">
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Tecnología es palanca estratégica
+                        </li>
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            ROI medible en cada inversión
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Dimensión 2 -->
+                <div style="background: var(--bg-light); padding: 2rem; border-radius: 12px;">
+                    <h3 style="color: #10B981; margin-top: 0;">Arquitectura & Stack</h3>
+                    <p style="color: var(--text-gray); margin-bottom: 1rem;"><strong>Qué evalúa:</strong> Estructura tecnológica, integración de sistemas y deuda técnica.</p>
+                    
+                    <p style="color: var(--text-gray); margin-bottom: 0.5rem; font-size: 0.95rem;"><strong>Nivel bajo (1–2):</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1rem 0; font-size: 0.9rem;">
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Arquitectura desorganizada
+                        </li>
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Deuda técnica acumulada
+                        </li>
+                    </ul>
+                    
+                    <p style="color: var(--text-gray); margin-bottom: 0.5rem; font-size: 0.95rem;"><strong>Nivel medio (3):</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1rem 0; font-size: 0.9rem;">
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Arquitectura clara y documentada
+                        </li>
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Deuda técnica controlada
+                        </li>
+                    </ul>
+                    
+                    <p style="color: var(--text-gray); margin-bottom: 0.5rem; font-size: 0.95rem;"><strong>Nivel alto (4–5):</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem;">
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Arquitectura escalable y flexible
+                        </li>
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Deuda técnica mínima
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Dimensión 3 -->
+                <div style="background: var(--bg-light); padding: 2rem; border-radius: 12px;">
+                    <h3 style="color: #10B981; margin-top: 0;">Operaciones & Delivery</h3>
+                    <p style="color: var(--text-gray); margin-bottom: 1rem;"><strong>Qué evalúa:</strong> Estabilidad operativa, automatización y confiabilidad de entregas.</p>
+                    
+                    <p style="color: var(--text-gray); margin-bottom: 0.5rem; font-size: 0.95rem;"><strong>Nivel bajo (1–2):</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1rem 0; font-size: 0.9rem;">
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Entregas lentas e impredecibles
+                        </li>
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Poca automatización
+                        </li>
+                    </ul>
+                    
+                    <p style="color: var(--text-gray); margin-bottom: 0.5rem; font-size: 0.95rem;"><strong>Nivel medio (3):</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1rem 0; font-size: 0.9rem;">
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Entregas predecibles
+                        </li>
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Automatización en procesos clave
+                        </li>
+                    </ul>
+                    
+                    <p style="color: var(--text-gray); margin-bottom: 0.5rem; font-size: 0.95rem;"><strong>Nivel alto (4–5):</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem;">
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Entregas rápidas y confiables
+                        </li>
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Automatización integral
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Dimensión 4 -->
+                <div style="background: var(--bg-light); padding: 2rem; border-radius: 12px;">
+                    <h3 style="color: #10B981; margin-top: 0;">Datos & Analítica</h3>
+                    <p style="color: var(--text-gray); margin-bottom: 1rem;"><strong>Qué evalúa:</strong> Capacidad de recopilar, analizar y usar datos para decisiones.</p>
+                    
+                    <p style="color: var(--text-gray); margin-bottom: 0.5rem; font-size: 0.95rem;"><strong>Nivel bajo (1–2):</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1rem 0; font-size: 0.9rem;">
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Datos dispersos y sin gobernanza
+                        </li>
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Decisiones basadas en intuición
+                        </li>
+                    </ul>
+                    
+                    <p style="color: var(--text-gray); margin-bottom: 0.5rem; font-size: 0.95rem;"><strong>Nivel medio (3):</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1rem 0; font-size: 0.9rem;">
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Datos centralizados
+                        </li>
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Reportes básicos disponibles
+                        </li>
+                    </ul>
+                    
+                    <p style="color: var(--text-gray); margin-bottom: 0.5rem; font-size: 0.95rem;"><strong>Nivel alto (4–5):</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem;">
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Datos integrados y accesibles
+                        </li>
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Decisiones predictivas en tiempo real
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Dimensión 5 -->
+                <div style="background: var(--bg-light); padding: 2rem; border-radius: 12px;">
+                    <h3 style="color: #10B981; margin-top: 0;">Cultura & Organización</h3>
+                    <p style="color: var(--text-gray); margin-bottom: 1rem;"><strong>Qué evalúa:</strong> Colaboración, roles claros y mentalidad de mejora continua.</p>
+                    
+                    <p style="color: var(--text-gray); margin-bottom: 0.5rem; font-size: 0.95rem;"><strong>Nivel bajo (1–2):</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1rem 0; font-size: 0.9rem;">
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Silos entre áreas
+                        </li>
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Resistencia al cambio
+                        </li>
+                    </ul>
+                    
+                    <p style="color: var(--text-gray); margin-bottom: 0.5rem; font-size: 0.95rem;"><strong>Nivel medio (3):</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1rem 0; font-size: 0.9rem;">
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Colaboración funcional
+                        </li>
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Mentalidad de mejora emergente
+                        </li>
+                    </ul>
+                    
+                    <p style="color: var(--text-gray); margin-bottom: 0.5rem; font-size: 0.95rem;"><strong>Nivel alto (4–5):</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem;">
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Colaboración fluida
+                        </li>
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Cultura de innovación y mejora
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 5: NIVEL ADECUADO SEGÚN ESTRATEGIA -->
+    <section class="projects" style="background: var(--bg-light);">
+        <div class="container">
+            <h2 class="section-title">¿Qué nivel <strong>necesita tu empresa?</strong></h2>
+            
+            <p style="text-align: center; color: var(--text-gray); margin-bottom: 1rem; max-width: 700px; margin-left: auto; margin-right: auto; font-size: 1.1rem; font-style: italic;">El objetivo no es maximizar tecnología. Es maximizar valor.</p>
+            
+            <p style="text-align: center; color: var(--text-gray); margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">No todas las empresas necesitan alcanzar nivel 5. El nivel adecuado depende de tu industria, estrategia y etapa de crecimiento.</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <!-- Perfil 1 -->
+                <div style="background: var(--bg-white); padding: 2rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                    <h3 style="color: #10B981; margin-top: 0;">Empresa Tradicional Estable</h3>
+                    <p style="color: var(--text-gray); margin-bottom: 1rem; font-size: 0.95rem;"><strong>Descripción:</strong> Operación consolidada, mercado maduro, cambio lento.</p>
+                    
+                    <div style="background: rgba(16, 185, 129, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+                        <p style="color: #10B981; font-weight: bold; margin: 0;">Objetivo típico: Nivel 2–3</p>
+                    </div>
+                    
+                    <p style="color: var(--text-gray); margin-bottom: 1rem; font-size: 0.9rem;"><strong>Por qué:</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem;">
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Necesita estabilidad operativa
+                        </li>
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Cambio tecnológico no es diferenciador
+                        </li>
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            ROI en eficiencia operativa
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Perfil 2 -->
+                <div style="background: var(--bg-white); padding: 2rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                    <h3 style="color: #10B981; margin-top: 0;">Empresa en Crecimiento Acelerado</h3>
+                    <p style="color: var(--text-gray); margin-bottom: 1rem; font-size: 0.95rem;"><strong>Descripción:</strong> Escalando rápido, mercado dinámico, necesita agilidad.</p>
+                    
+                    <div style="background: rgba(16, 185, 129, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+                        <p style="color: #10B981; font-weight: bold; margin: 0;">Objetivo típico: Nivel 3–4</p>
+                    </div>
+                    
+                    <p style="color: var(--text-gray); margin-bottom: 1rem; font-size: 0.9rem;"><strong>Por qué:</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem;">
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Necesita escalar sin romper operación
+                        </li>
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Datos son críticos para decisiones
+                        </li>
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Tecnología es ventaja competitiva
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Perfil 3 -->
+                <div style="background: var(--bg-white); padding: 2rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                    <h3 style="color: #10B981; margin-top: 0;">Empresa Digital-First</h3>
+                    <p style="color: var(--text-gray); margin-bottom: 1rem; font-size: 0.95rem;"><strong>Descripción:</strong> Nativa digital, mercado altamente competitivo, innovación constante.</p>
+                    
+                    <div style="background: rgba(16, 185, 129, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+                        <p style="color: #10B981; font-weight: bold; margin: 0;">Objetivo típico: Nivel 4–5</p>
+                    </div>
+                    
+                    <p style="color: var(--text-gray); margin-bottom: 1rem; font-size: 0.9rem;"><strong>Por qué:</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem;">
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Tecnología es el producto
+                        </li>
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Velocidad de innovación es crítica
+                        </li>
+                        <li style="padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text-gray);">
+                            <span style="position: absolute; left: 0;">•</span>
+                            Datos y analítica son core
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 6: CERRAR LA BRECHA -->
+    <section class="services" style="background: var(--bg-white);">
+        <div class="container">
+            <h2 class="section-title">Cómo <strong>cerrar la brecha</strong></h2>
+            
+            <p style="text-align: center; color: var(--text-gray); margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">El modelo no es un ejercicio académico. Es una herramienta práctica para construir un roadmap realista.</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto;">
+                <div style="text-align: center;">
+                    <div style="width: 60px; height: 60px; background: #10B981; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1rem;">1</div>
+                    <h3 style="margin-bottom: 0.5rem;">Identificar nivel actual</h3>
+                    <p style="color: var(--text-gray); font-size: 0.9rem;">Diagnóstico por dimensión. Entender dónde estás hoy.</p>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div style="width: 60px; height: 60px; background: #10B981; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1rem;">2</div>
+                    <h3 style="margin-bottom: 0.5rem;">Definir nivel objetivo</h3>
+                    <p style="color: var(--text-gray); font-size: 0.9rem;">Por dimensión, no global. Alineado con estrategia.</p>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div style="width: 60px; height: 60px; background: #10B981; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1rem;">3</div>
+                    <h3 style="margin-bottom: 0.5rem;">Priorizar iniciativas</h3>
+                    <p style="color: var(--text-gray); font-size: 0.9rem;">Impacto en negocio, dependencias, capacidad.</p>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div style="width: 60px; height: 60px; background: #10B981; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1rem;">4</div>
+                    <h3 style="margin-bottom: 0.5rem;">Construir roadmap</h3>
+                    <p style="color: var(--text-gray); font-size: 0.9rem;">Horizonte 12–18 meses. Hitos y recursos claros.</p>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div style="width: 60px; height: 60px; background: #10B981; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1rem;">5</div>
+                    <h3 style="margin-bottom: 0.5rem;">Ejecutar quick wins</h3>
+                    <p style="color: var(--text-gray); font-size: 0.9rem;">Ganancias tempranas. Generar momentum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section id="cta-section" class="blog-newsletter-cta" style="margin: 5rem 2rem; background: linear-gradient(135deg, #10B981 0%, #059669 100%);">
+        <div class="container" style="text-align: center;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color: white;">Modernizar no es hacer más tecnología</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem; color: rgba(255, 255, 255, 0.95);">Es hacer la tecnología correcta, en el nivel correcto, para el momento correcto de tu empresa.</p>
+            
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <button class="btn-primary" style="background: white; color: #10B981; border: none; cursor: pointer; font-weight: 600;" onclick="window.location.href='diagnostic.html'">Hacer diagnóstico</button>
+                <button class="btn-secondary" style="background: transparent; color: white; border: 2px solid white; cursor: pointer; font-weight: 600;">Descargar modelo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Modelo de Madurez</h4>
+                    <p class="footer-description">Herramienta práctica para evaluar y planificar la modernización tecnológica de tu empresa.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Dimensiones</h4>
+                    <ul class="footer-links">
+                        <li><a href="#estrategia">Estrategia & Gobernanza</a></li>
+                        <li><a href="#arquitectura">Arquitectura & Stack</a></li>
+                        <li><a href="#operaciones">Operaciones & Delivery</a></li>
+                        <li><a href="#datos">Datos & Analítica</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#servicios">Servicios</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 deeb Advisory. Todos los derechos reservados.</p>
+                <p class="footer-tagline">Transformación Digital para el futuro</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/mobile-menu.js"></script>
+</body>
+</html>

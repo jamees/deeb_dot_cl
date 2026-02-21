@@ -196,7 +196,8 @@ section {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
-.nav-item-mega:hover .mega-menu {
+.nav-item-mega:hover .mega-menu,
+.mega-menu:hover {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(0);
@@ -381,6 +382,18 @@ section {
     background: var(--bg-light);
     padding: 6rem 0 4rem;
     min-height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-svg-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.35;
 }
 
 .hero-container {
@@ -388,13 +401,16 @@ section {
     margin: 0 auto;
     padding: 0 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 4rem;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-content {
-    padding-right: 2rem;
+    padding-right: 0;
+    max-width: 700px;
 }
 
 .hero-brand {
@@ -500,14 +516,9 @@ section {
     box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
 }
 
-/* 3D SHAPES */
+/* 3D SHAPES - No longer used */
 .hero-image {
-    position: relative;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    display: none;
 }
 
 .hero-image::before {
@@ -515,11 +526,11 @@ section {
     position: absolute;
     width: 110%;
     height: 110%;
-    background-image: var(--hero-bg-image);
+    background-image: none;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.85;
+    opacity: 0;
     z-index: 1;
     transition: background-image 0.3s ease, opacity 0.3s ease, mask-image 0.3s ease;
     mask-image: radial-gradient(
@@ -563,30 +574,18 @@ section {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: radial-gradient(
-        ellipse 70% 60% at center,
-        transparent 0%,
-        transparent 45%,
-        var(--bg-light) 85%,
-        var(--bg-light) 100%
-    );
+    background: transparent;
     z-index: 2;
     pointer-events: none;
     transition: background 0.3s ease;
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
 }
 
 [data-theme="dark"] .hero-image::after {
-    background: radial-gradient(
-        ellipse 70% 60% at center,
-        transparent 0%,
-        transparent 40%,
-        var(--bg-light) 80%,
-        var(--bg-light) 100%
-    );
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
 }
 
 .shape-3d {
@@ -1948,4 +1947,318 @@ section {
     .newsletter-btn {
         width: 100%;
     }
+}
+
+
+/* SVG ANIMATIONS */
+
+/* Float animations for background shapes */
+@keyframes svg-float-1 {
+    0%, 100% {
+        transform: translateY(0px) translateX(0px);
+    }
+    25% {
+        transform: translateY(-15px) translateX(5px);
+    }
+    50% {
+        transform: translateY(-25px) translateX(-5px);
+    }
+    75% {
+        transform: translateY(-10px) translateX(8px);
+    }
+}
+
+@keyframes svg-float-2 {
+    0%, 100% {
+        transform: translateY(0px) translateX(0px);
+    }
+    25% {
+        transform: translateY(10px) translateX(-8px);
+    }
+    50% {
+        transform: translateY(20px) translateX(5px);
+    }
+    75% {
+        transform: translateY(8px) translateX(-10px);
+    }
+}
+
+@keyframes svg-float-3 {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes svg-float-4 {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes svg-float-5 {
+    0%, 100% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-6px);
+    }
+}
+
+@keyframes svg-float-6 {
+    0%, 100% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(6px);
+    }
+}
+
+/* Pulse animations for shapes */
+@keyframes svg-pulse-1 {
+    0%, 100% {
+        stroke-width: 2.5;
+        opacity: 0.8;
+    }
+    50% {
+        stroke-width: 3;
+        opacity: 1;
+    }
+}
+
+@keyframes svg-pulse-2 {
+    0%, 100% {
+        stroke-width: 2;
+        opacity: 0.6;
+    }
+    50% {
+        stroke-width: 2.5;
+        opacity: 0.9;
+    }
+}
+
+@keyframes svg-pulse-3 {
+    0%, 100% {
+        stroke-width: 2.5;
+        opacity: 0.8;
+    }
+    50% {
+        stroke-width: 3;
+        opacity: 1;
+    }
+}
+
+@keyframes svg-pulse-4 {
+    0%, 100% {
+        stroke-width: 2;
+        opacity: 0.6;
+    }
+    50% {
+        stroke-width: 2.5;
+        opacity: 0.9;
+    }
+}
+
+/* Pulse animations for dots */
+@keyframes svg-pulse-dot {
+    0%, 100% {
+        r: 4px;
+        opacity: 0.7;
+    }
+    50% {
+        r: 6px;
+        opacity: 1;
+    }
+}
+
+/* Rotation animations for circles */
+@keyframes svg-rotate-1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes svg-rotate-2 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Draw animations for lines */
+@keyframes svg-draw {
+    0% {
+        stroke-dasharray: 100;
+        stroke-dashoffset: 100;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        stroke-dasharray: 100;
+        stroke-dashoffset: 0;
+        opacity: 0.7;
+    }
+}
+
+/* Wave animation */
+@keyframes svg-wave {
+    0%, 100% {
+        d: path('M 100 450 Q 150 440 200 450 T 300 450 T 400 450');
+    }
+    50% {
+        d: path('M 100 450 Q 150 435 200 450 T 300 450 T 400 450');
+    }
+}
+
+/* Apply animations to SVG elements */
+.svg-float-1 {
+    animation: svg-float-1 8s ease-in-out infinite;
+    transform-origin: center;
+}
+
+.svg-float-2 {
+    animation: svg-float-2 10s ease-in-out infinite;
+    transform-origin: center;
+}
+
+.svg-float-3 {
+    animation: svg-float-3 6s ease-in-out infinite;
+    transform-origin: center;
+}
+
+.svg-float-4 {
+    animation: svg-float-4 7s ease-in-out infinite;
+    transform-origin: center;
+}
+
+.svg-float-5 {
+    animation: svg-float-5 5s ease-in-out infinite;
+    transform-origin: center;
+}
+
+.svg-float-6 {
+    animation: svg-float-6 6.5s ease-in-out infinite;
+    transform-origin: center;
+}
+
+.svg-pulse-1 {
+    animation: svg-pulse-1 3s ease-in-out infinite;
+}
+
+.svg-pulse-2 {
+    animation: svg-pulse-2 3.5s ease-in-out infinite;
+}
+
+.svg-pulse-3 {
+    animation: svg-pulse-3 4s ease-in-out infinite;
+}
+
+.svg-pulse-4 {
+    animation: svg-pulse-4 3.5s ease-in-out infinite;
+}
+
+.svg-pulse-dot-1 {
+    animation: svg-pulse-dot 2.5s ease-in-out infinite;
+}
+
+.svg-pulse-dot-2 {
+    animation: svg-pulse-dot 2.8s ease-in-out infinite;
+}
+
+.svg-pulse-dot-3 {
+    animation: svg-pulse-dot 3s ease-in-out infinite;
+}
+
+.svg-pulse-dot-4 {
+    animation: svg-pulse-dot 2.6s ease-in-out infinite;
+}
+
+.svg-pulse-dot-5 {
+    animation: svg-pulse-dot 2.7s ease-in-out infinite;
+}
+
+.svg-pulse-dot-6 {
+    animation: svg-pulse-dot 2.9s ease-in-out infinite;
+}
+
+.svg-pulse-dot-7 {
+    animation: svg-pulse-dot 2.5s ease-in-out infinite 0.2s;
+}
+
+.svg-pulse-dot-8 {
+    animation: svg-pulse-dot 2.8s ease-in-out infinite 0.4s;
+}
+
+.svg-pulse-dot-9 {
+    animation: svg-pulse-dot 2.6s ease-in-out infinite 0.1s;
+}
+
+.svg-pulse-dot-10 {
+    animation: svg-pulse-dot 3s ease-in-out infinite 0.3s;
+}
+
+.svg-rotate-1 {
+    animation: svg-rotate-1 12s linear infinite;
+    transform-origin: 350px 120px;
+}
+
+.svg-rotate-2 {
+    animation: svg-rotate-2 15s linear infinite;
+    transform-origin: 350px 120px;
+}
+
+.svg-draw-1 {
+    animation: svg-draw 2s ease-in-out infinite;
+}
+
+.svg-draw-2 {
+    animation: svg-draw 2.2s ease-in-out infinite 0.2s;
+}
+
+.svg-draw-3 {
+    animation: svg-draw 2.4s ease-in-out infinite 0.4s;
+}
+
+.svg-draw-4 {
+    animation: svg-draw 2.1s ease-in-out infinite 0.1s;
+}
+
+.svg-draw-5 {
+    animation: svg-draw 2.3s ease-in-out infinite 0.3s;
+}
+
+.svg-draw-6 {
+    animation: svg-draw 2.2s ease-in-out infinite 0.2s;
+}
+
+.svg-draw-7 {
+    animation: svg-draw 2.4s ease-in-out infinite 0.4s;
+}
+
+.svg-draw-8 {
+    animation: svg-draw 2.5s ease-in-out infinite 0.5s;
+}
+
+.svg-draw-9 {
+    animation: svg-draw 2.5s ease-in-out infinite 0.6s;
+}
+
+.svg-draw-10 {
+    animation: svg-draw 2.3s ease-in-out infinite 0.3s;
+}
+
+.svg-wave {
+    animation: svg-wave 4s ease-in-out infinite;
 }
